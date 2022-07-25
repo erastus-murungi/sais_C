@@ -189,6 +189,7 @@ string_t *string_join(const char_t *joiner, int count, ...) {
                 s->chars[(i * 2) + 1] = *joiner;
         }
     }
+    va_end(args);
     return s;
 }
 
